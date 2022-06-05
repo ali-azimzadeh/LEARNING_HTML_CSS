@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        sign up
+    </title>
+    
+    <style>
+        
+        body{
+            background-color: rgb(197, 74, 74) ;
+    
+        }
+        h2{
+            color: rgba(255, 255, 255, 0.863);
+           font-size: 35px;
+           border-style: initial;
+            background-color:rgb(20, 121, 216) ;
+            border-radius: 18px;
+            padding-right: 0px;
+            margin: 0px;
+            float: right;
+            
+            
+            
+        }
+        .a{
+            color: rgba(0, 0, 0, 0.863);
+            float: right;
+            font-size: 25px;
+        }
+        .az{
+            padding-right: 140px;
+            float: right;
+            border-style: none;
+           background-color:rgb(255, 255, 255);
+           height: 20px;
+        }
+        .az:hover{
+            background-color: white;
+
+        }
+        input[type=text]:focus {
+            width: 10%;
+           display: inline-block;
+           border: none;
+           padding: 17px;
+           background-color: white;
+       }
+       input[type=password]:focus {
+        width: 10%;
+           display: inline-block;
+           border: none;
+           padding: 7px;
+           background-color: white;
+
+       }
+       #tahsilat{
+           float: right;
+          color: rgb(0, 0, 0);
+          font-size: 20px;
+       }
+       .enter{ 
+          
+         border: none;
+         color: white;
+         padding: 20px ;
+         width: 20px;
+         text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 10px ;
+          transition-duration: 0.4s;
+          cursor: pointer;
+          
+         }
+         .enter1{
+            border:  solid green;
+           background-color: green;
+
+         }
+         .enter1:hover{
+             background-color: rgb(2, 185, 2);
+         }
+         .enter2{
+             border: solid rgb(180, 2, 2);
+             background-color: rgb(180, 2, 2);
+         }
+         .enter2:hover{
+             background-color: red;
+         }
+         .signpicture{
+             height: 100px;
+             width: 100px;
+             float: right;
+             
+         }
+      
+
+         
+        
+     
+        
+
+            
+        
+    </style>
+</head>
+<body>
+    <img src="2037710.png" class="signpicture"></br></br>
+    <h2>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+    <i class="em em-arrow_down" aria-role="presentation" aria-label="DOWNWARDS BLACK ARROW"></i>
+   اطلاعات زیر را وارد کنید</h2>
+    
+   </br></br></br></br></br>
+    <border>
+        <label class="a" id="name">:نام</label></br></br>
+        <input type="text" id="name" class="az" ></br></br></br>
+        <label class="a" id="family">:نام خانوادگی</label></br></br>
+        <input type="text" id="family" class="az"></border></br></br></br>
+        <label class="a" id="code">:کدملی</label></br></br>
+        <input type="password" class="az" maxlength="10" ></br></br></br>
+        <label class="a" id="date">:تاریخ تولد</label></br></br>
+        <input type="date" id="date" class="az"></br></br></br>
+        <label class="a" id="phone">:شماره تلفن همراه</label></br></br>
+        <input type="text" id="phone" class="az" maxlength="13" value="+98"></br></br></br>
+       <label id="tahsilat">:میزان تحصیلات</label>
+       <select id="tahsilat" name="tahsilat">
+           <option value="sikl">سیکل</option>
+           <option value="diplom">دیپلم</option>
+           <option value="diplom">لیسانس</option>
+           <option value="diplom">PH.D</option>
+           </select></br></br>
+        <label class="a" id="address">:آدرس منزل</label></br></br>
+        <input type="text" id="addres" class="az"></br></br></br>
+        <label class="a" id="photo">:تصویرشخص</label></br></br>
+        <input type="file" class="az"></br></br></br>
+        <a style="float: right;" href="#"class="enter enter1">ثبت</a>
+        <a style="float: right;" href="#"class="enter enter2">لغو</a>
+    
+    </border>
+</body>

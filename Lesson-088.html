@@ -1,0 +1,451 @@
+<!-- *************************** -->
+<!-- currentcolor keyword in CSS -->
+<!-- *************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            color: rgb(121, 235, 15);
+            border: 10px solid currentcolor;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The currentcolor Keyword</h2>
+
+    <p>The currentcolor keyword refers to the current value of the color property of an element.</p>
+
+    <div>
+        This div element has a blue text color and a blue border.
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- *************************** -->
+<!-- currentcolor keyword in CSS -->
+<!-- *************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            color: green;
+        }
+        
+        div {
+            box-shadow: 0px 0px 15px currentcolor;
+            border: 5px solid currentcolor;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The currentcolor Keyword</h2>
+
+    <p>This is some text in the body part...</p>
+
+    <div>
+        <p>This div's border color and shadow color is set to the current color value of the body element.</p>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- ********************** -->
+<!-- linear-gradient in CSS -->
+<!-- ********************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to right, red, yellow);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Linear Gradient - Left to Right</h1>
+    <p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
+
+    <div id="grad1"></div>
+
+</body>
+
+</html> -->
+
+<!-- ********************************************* -->
+<!-- linear-gradient Using Different Angles in CSS -->
+<!-- ********************************************* -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 100px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(0deg, red, yellow);
+        }
+        
+        #grad2 {
+            height: 100px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(90deg, red, yellow);
+        }
+        
+        #grad3 {
+            height: 100px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(180deg, red, yellow);
+        }
+        
+        #grad4 {
+            height: 100px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(-90deg, red, yellow);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Linear Gradients - Using Different Angles</h1>
+
+    <div id="grad1" style="text-align:center;">0deg</div><br>
+    <div id="grad2" style="text-align:center;">90deg</div><br>
+    <div id="grad3" style="text-align:center;">180deg</div><br>
+    <div id="grad4" style="text-align:center;">-90deg</div>
+
+</body>
+
+</html> -->
+
+<!-- ************************************************* -->
+<!-- linear-gradient Using Multiple Color Stops in CSS -->
+<!-- ************************************************* -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(red, yellow, green);
+        }
+        
+        #grad2 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+        }
+        
+        #grad3 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(red 10%, green 85%, blue 90%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Linear Gradients - Multiple Color Stops</h1>
+    <p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+
+    <h2>3 Color Stops (evenly spaced):</h2>
+    <div id="grad1"></div>
+
+    <h2>7 Color Stops (evenly spaced):</h2>
+    <div id="grad2"></div>
+
+    <h2>3 Color Stops (not evenly spaced):</h2>
+    <div id="grad3"></div>
+
+</body>
+
+</html> -->
+
+<!-- ********************************* -->
+<!--  repeating linear gradient in CSS -->
+<!-- ********************************* -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+        
+        #grad2 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-linear-gradient(45deg, red, yellow 7%, green 10%);
+        }
+        
+        #grad3 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-linear-gradient(190deg, red, yellow 7%, green 10%);
+        }
+        
+        #grad4 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-linear-gradient(90deg, red, yellow 7%, green 10%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Repeating Linear Gradient</h1>
+
+    <div id="grad1"></div>
+
+    <p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+    <div id="grad2"></div>
+
+    <p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+    <div id="grad3"></div>
+
+    <p>A repeating gradient on 90deg axe starting red and finishing green:</p>
+    <div id="grad4"></div>
+
+</body>
+
+</html> -->
+
+<!-- *********************** -->
+<!--  radial gradient in CSS -->
+<!-- *********************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 150px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Repeating Radial Gradient</h1>
+
+    <div id="grad1"></div>
+
+</body>
+
+</html> -->
+
+<!-- *********************** -->
+<!--  conic gradient in CSS -->
+<!-- *********************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(red, yellow, green, blue, black);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Conic Gradient - Pie Chart</h1>
+
+    <div id="grad1"></div>
+
+</body>
+
+</html> -->
+
+
+<!-- *********************** -->
+<!--  conic gradient in CSS -->
+<!-- *********************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Conic Gradient - Pie Chart</h1>
+
+    <div id="grad1"></div>
+
+</body>
+
+</html> -->
+
+<!-- ******************************** -->
+<!--  repeating conic gradient in CSS -->
+<!-- ******************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Repeating a Conic Gradient</h1>
+
+    <div id="grad1"></div>
+
+</body>
+
+</html> -->
+
+<!-- ******************** -->
+<!--  writing mode in CSS -->
+<!-- ******************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p.test1 {
+            writing-mode: horizontal-tb;
+        }
+        
+        span.test2 {
+            writing-mode: vertical-rl;
+        }
+        
+        p.test2 {
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The writing-mode Property</h1>
+
+    <p class="test1">Some text with default writing-mode.</p>
+
+    <p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
+
+    <p class="test2">Some text with writing-mode: vertical-rl.</p>
+
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+<!-- تمرین رنگین کمان -->
+
+
+
+
+
+
+<!-- ************************** -->
+<!--  Rainbow Background in CSS -->
+<!-- ************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 55px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+        Rainbow Background
+    </div>
+
+</body>
+
+</html> -->

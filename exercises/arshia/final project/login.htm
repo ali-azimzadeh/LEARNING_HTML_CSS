@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>
+    login
+</title>
+
+<style>
+
+body{
+    background-color: rgb(197, 74, 74) ;
+}  
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  
+  box-sizing: border-box;
+  background-color: rgb(253, 253, 253);
+}
+
+button {
+  background-color: rgb(64, 145, 211);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+text:hover{
+  background-color: white;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.az:hover:hover{
+  background-color: white;
+
+}
+.az{
+  border-color: white;
+}
+.logimg{
+  height: 150px;
+  width: 350px;
+  padding-left: 500px;
+}
+
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<img src="6995969_preview.png" class="logimg">
+  <div class="container">
+    <label for="uname"><b>نام کاربری</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" class="az" required>
+
+    <label for="psw"><b>رمز عبور</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" class="az" required>
+        
+    <button type="submit">ورود</button>
+    <label>
+      <input type="checkbox"  name="remember"> Remember me
+    </label>
+  </div>
+
+ 
+</form>
+
+</body>
+</html>

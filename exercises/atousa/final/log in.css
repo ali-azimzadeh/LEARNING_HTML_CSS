@@ -1,0 +1,171 @@
+body{ 
+    background-color: rgb(228, 117, 13);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.fo{background-image: url("https://www.xtrafondos.com/wallpapers/vertical/pintura-en-ondas-6286.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+  
+}
+
+form 
+{border: 3px rgb(8, 8, 8);
+color: rgb(0, 0, 0);
+text-align: right;
+
+}
+    
+fieldset{
+position:relative;
+
+}
+
+legend { text-align:center; 
+    color: wheat; }
+
+    
+
+
+input[type=submit] {
+    background-color: #8910b9;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin:10px 20px ;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    float: right;
+    text-align: right;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+input[type=submit]:hover {
+    background-color: #cc00e7;
+}
+
+input[type=username],
+
+input[type=password],
+
+ textarea {
+    width: 50%;
+    padding: 12px;
+    margin: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    float: right;
+    text-align: right;
+}
+
+    
+label {
+    padding: 10px 5px 10px 0;
+    display:block;
+    float: right;
+    text-align: right;
+  
+}
+
+
+
+
+input[type=checkbox]
+{
+
+float: right;
+text-align: right;
+padding: 3px;
+margin: 3px;
+
+
+
+}
+
+
+input[type=submit] {
+    background-color: #8910b9;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin:10px 20px ;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+input[type=submit]:hover {
+    background-color: #cc00e7;
+}
+
+
+.la {
+    float: right;
+    width: 25%;
+    margin-top: 4px;
+}
+
+.in {
+    float: left;
+    width: 75%;
+    margin-top: 4px;
+}
+
+
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .in,
+    .la
+    {
+        width: 100%;
+        margin-top: 2px;
+    }
+}
+
+
+a.sign-up:visited , a.sign-up:link 
+{
+
+    float: right;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    padding-right: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+
+ 
+}
+
+ a.sign-up:hover
+{
+
+text-shadow:2px 5px 5px brown;
+
+}
+

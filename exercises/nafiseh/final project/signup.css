@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+}
+
+/* فرم عضویت در سایت */
+
+h1{
+	color: #fff;
+	font-weight: 900;
+	text-align: center;
+}
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	flex-direction: column;
+}
+.box {
+	width: 350px;
+	height: 390px;
+	font-size: 16px;
+	padding: 20px 40px 40px 40px;
+	background: #434856;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 48px;
+}
+.user {
+	margin-top: 50px;
+}
+.fas {
+	position: absolute;
+}
+.user input {
+	width: 90%;
+	margin-bottom: 25px;
+	padding: 0px 30px 10px;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid #f5f5f5;
+	outline: none;
+	background-color: transparent;
+	color: #fff;
+	transition: .3s all;
+}
+.user input:focus{
+	border-bottom: 1px solid #ff7f50;
+}
+.login-btn{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.btn{
+	display: block;
+	width: 70%;
+	padding: 15px;
+	background-color:  #31a3ff;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	opacity: 0.8;
+	transition: .2s all;
+	cursor: pointer;
+}
+.btn:hover{
+	opacity: 1;
+}
+
+/* header */
+
+header{
+	padding: 10px;
+	/* margin: 5px; */
+	background-color: #112f44;
+}
+header input{
+	padding: 5px;
+	width: 50px;
+	transition: width .2s ease-in-out;
+}
+header input:focus{
+	width: 100px;
+}
+
+/* menubar */
+
+nav{
+	position: relative;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+	background: #f1f4f7;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+nav ul li {
+	float: right;
+	position: relative;
+	font-weight: bold;
+}
+
+nav ul li a {
+	display: block;
+	padding: 15px 32px;
+	color: #4e4e4e;
+	text-decoration: none;
+}
+
+nav ul li:hover {
+	background: #a70101;
+}
+
+nav ul li:hover a {
+	color: #fff;
+}
+
+nav ul ul {
+	background: #9c0000;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 200px;
+}
+nav ul ul li {
+	float: none;
+	border-top: 1px solid #940000;
+	border-bottom: 1px solid #940000;
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #fff;
+}	
+nav ul ul li a:hover {
+	background: #112f44;
+}
+

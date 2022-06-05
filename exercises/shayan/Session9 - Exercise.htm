@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            direction: rtl;
+        }
+        form{
+           font-size: 15px;
+           color: rgb(147, 80, 255); 
+           border: solid silver;
+           padding: 15px;
+           margin: 10px;
+           
+        }
+        
+        label{
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>اطلاعات خواسته شده را وارد نمائید</h2>
+
+    <form action="action_page.php">
+        <label for="name">نام:</label>
+        <br>
+        <input type="txt" id="name" name="name" value="">
+        <br>
+
+        <label for="Family">نام خانوادگی:</label>
+        <br>
+        <input type="txt" id="Family" name="Family" value="">
+        <br>
+
+        
+        <P>امروز در مورد چه مبحثی درس داده شد؟ </P>
+        <label for="html">HTML</label>
+        <input type="radio" id="HTML" name="HTML" value="HTML">
+        <br>
+        <label for="html">Office</label>
+        <input type="radio" id="Office" name="office" value="office">
+        <br>
+        <label for="html">Photoshop</label>
+        <input type="radio" id="Photoshop" name="Photoshop" value="Photoshop">
+        <br>
+
+
+        <p>به کدام موارد زیر علاقه مند هستید</p>
+        <label for="num1">برنامه نویسی</label>
+        <input type="checkbox" id=num1 name="num1" value="برنامه نویسی">
+        <br>
+        <label for="num2">شبکه</label>
+        <input type="checkbox" id=num2 name="num2" value="شبکه">
+        <br>
+        <label for="num3">سئو</label>
+        <input type="checkbox" id=num3 name="num3" value="سئو">
+        <br>
+        <br>
+        <input type="submit" value="ثبت اطلاعات">
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="US Lottery">
+    <meta name="author" content="Shayan Badalzadeh">
+    <meta name="keywords" content="USLottery,US,Visa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <head>
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .header {
+                background-color: royalblue;
+
+            }
+
+            .Logo {
+                width: 65px;
+                height: 65px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .hLeft {
+                color: white;
+                display: inline-block;
+                font-size: larger;
+                margin-bottom: 5px;
+            }
+
+            .hRight {
+                color: white;
+                float: right;
+                padding: 15px;
+            }
+
+            .form {
+                border-radius: 10px;
+                background-color: lightgray;
+                padding: 5px;
+                font-size: 14pt;
+            }
+
+            .btnSubmit {
+                font-size: 25px;
+                background-color: lawngreen;
+                padding: 8px 21px;
+                border-radius: 35px;
+            }
+
+            .btnReset {
+                font-size: 25px;
+                background-color: rgb(252, 0, 0);
+                padding: 8px 21px;
+                border-radius: 35px;
+            }
+
+            .footer {
+                text-align: center;
+                font-size: 14px;
+                background-color: lightgray;
+                padding: 1px;
+
+            }
+        </style>
+
+
+    </head>
+</head>
+
+<body>
+    <div>
+        <div>
+            <header class="header">
+                <div>
+                    <a href="HomePage.html">
+                        <img class="Logo" src="Images/United_States_Department.png" alt="United_States_Department">
+                    </a>
+                    <div class="hLeft">
+                        <h3>U.S. Department of State</h4>
+                            <h5>Bureau of Consular Affairs</h5>
+                    </div>
+
+                    <div class="hRight">
+                        <h1>Electronic Diversity Visa</h1>
+                    </div>
+            </header>
+        </div>
+        <br>
+        <div class="form" style="padding: 10px;">
+
+            <fieldset class="fieldest">
+                <legend>Registration Form</legend>
+                <br>
+                <form class="form" action="FinalPage.html" method="post">
+
+                    <label for="lastName">1- Please Enter your last Name:</label>
+                    <input placeholder="Enter carefully" type="text" name="lastName" id="lastName">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="fristName">2- Please Enter your Frist Name:</label>
+                    <input placeholder="Enter carefully" type="text" name="fristName" id="fristName">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="middleName">3- Please Enter Your Middle Name:</label>
+                    <input placeholder="Enter carefully" type="text" name="fristName" id="middleName">
+
+                    <label for="NoMiddleName">I do not have a middle name:</label>
+                    <input type="checkbox" name="middleName" id="NoMiddleName" value="NoMiddleName">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="Birthday">4- Please Enter Your Date of Birth:</label>
+                    <input type="date" name="Birthday" id="Birthday">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="Gender">5- Gender:</label>
+                    <select id="Gender" name="Choose Gender">
+                        <option value="Choose" selected>Choose Gender</option>
+                        <option value="Female">Female</option>
+                        <option value="Man">Man</option>
+                    </select>
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="Country">6- Select Your Country:</label>
+                    <select id="Country" name="Choose Gender">
+                        <option value="Choose" selected>Choose Country</option>
+                        <option value="Iran">Iran</option>
+                        <option value="United States">United States</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Italy">Italy</option>
+                    </select>
+                    <label for="City">Please Enter your city of birth</label>
+                    <input type="text" id="City" class="City">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="Email">7- Please Enter Your Email:</label>
+                    <input type="Email" id="Email" name="Email">
+                    <label for="reEmail">Please Re-Enter your Email:</label>
+                    <input type="reEmail" id="reEmail" name="reEmail">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="phone">8- Please Enter Your Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="With country code">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="passport">9- Please Enter Your Passport Number:</label>
+                    <input type="text" id="passport" name="passport">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="expiration">10- Select The Expiration Date of Your Passport:</label>
+                    <input type="date" name="expiration" id="expiration">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="Photo">11- Please Upload Your Photo:</label>
+                    <input type="file" id="Photo" name="Photo">
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="education">12- Please select your education level:</label>&nbsp; &nbsp; &nbsp;
+
+                    <label for="Diploma">Diploma</label>
+                    <input type="radio" id="Diploma" name="education" value="Diploma">
+
+                    &nbsp;
+
+                    <label for="AssociateDegree">Associate Degree</label>
+                    <input type="radio" id="AssociateDegree" name="education" value="Associate Degree">
+
+                    &nbsp;
+
+                    <label for="universitycourses">Some university courses</label>
+                    <input type="radio" id="universitycourses" name="education" value="Some university courses">
+
+                    &nbsp;
+
+                    <label for="Bachelor">Bachelor</label>
+                    <input type="radio" id="Bachelor" name="education" value="Bachelor">
+
+                    &nbsp;
+
+                    <label for="MA">MA</label>
+                    <input type="radio" id="MA" name="education" value="MA">
+
+                    &nbsp;
+
+                    <label for="P.H.D">P.H.D</label>
+                    <input type="radio" id="P.H.D" name="education" value="P.H.D">
+                    <hr>
+                    <br>
+                    <label for="EnglishVol">13- English proficiency: (between 0 and 10):</label>
+                    <input type="range" id="EnglishVol" name="EnglishVol" min="0" max="10">
+                    <br>
+                    <br>
+                    <label for="Introduction">14- Introduction to the United States: (between 0 and 10):</label>
+                    <input type="range" id="Introduction" name="Introduction" min="0" max="10">
+                    <br>
+                    <br>
+                    <label for="Immigration">15- Introduction to Immigration: (between 0 and 10):</label>
+                    <input type="range" id="Immigration" name="Immigration" min="0" max="10">
+
+                    <br>
+                    <hr>
+
+                    <button class="btnSubmit" type="submit" onclick="alert('successfully registered')">submit</button>
+                    &nbsp;
+                    <input type="reset" class="btnReset">
+                </form>
+            </fieldset>
+
+            <div>
+                <footer class="footer">
+                    <div>
+                        <P>
+                            This site is managed by the Bureau of Consular Affairs, U.S. Department of State. External
+                            links
+                            to other Internet sites should not be construed as an endorsement of the views contained
+                            therein.
+                        </P>
+                        <button type="button"
+                            onclick="location.href='https://travel.state.gov/content/travel.html'; alert('Please Waite...')">travel.stat.gov</button>
+
+                        <button type="button"
+                            onclick="location.href=''; alert('The page was refreshed')">Refresh</button>
+                        </button>
+
+                    </div>
+                    <hr>
+                    <h4>Designed by Shayan Badalzadeh</h4>
+                    <h4>2021 - Exercise Web1</h4>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

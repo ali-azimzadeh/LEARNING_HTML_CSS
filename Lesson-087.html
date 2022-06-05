@@ -1,0 +1,209 @@
+<!-- ******************************** -->
+<!-- multiple background image in CSS -->
+<!-- ******************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example1 {
+            background-image: url("images/img_tree.gif"), url("images/img_flwr.gif");
+            background-position: right bottom, left top;
+            background-repeat: repeat, repeat;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Multiple Backgrounds</h1>
+    <p>The following div element has two background images:</p>
+
+    <div id="example1">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- ******************************** -->
+<!-- multiple background image in CSS -->
+<!-- ******************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example1 {
+            background: url("images/img_tree.gif") right bottom no-repeat, url("images/img_flwr.gif") left top repeat;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="example1">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- **************************** -->
+<!-- size background image in CSS -->
+<!-- **************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example1 {
+            background: url(images/img_tree.gif) left top no-repeat, url(images/img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+            padding: 15px;
+            background-size: 50px, 130px, auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="example1">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- ************************ -->
+<!-- background origin in CSS -->
+<!-- ************************ -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example1 {
+            border: 10px solid rgb(250, 72, 72);
+            padding: 35px;
+            background: url(images/img_flwr.gif);
+            background-repeat: no-repeat;
+        }
+        
+        #example2 {
+            border: 10px solid rgba(34, 216, 171, 0.616);
+            padding: 35px;
+            background: url(images/img_flwr.gif);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+        
+        #example3 {
+            border: 10px solid rgb(198, 231, 11);
+            padding: 35px;
+            background: url(images/img_flwr.gif);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The background-origin Property</h1>
+
+    <p>No background-origin (padding-box is default):</p>
+    <div id="example1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <p>background-origin: border-box:</p>
+    <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <p>background-origin: content-box:</p>
+    <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- ********************** -->
+<!-- background clip in CSS -->
+<!-- ********************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example1 {
+            border: 10px dotted black;
+            padding: 35px;
+            background: yellow;
+        }
+        
+        #example2 {
+            border: 10px dotted black;
+            padding: 35px;
+            background: yellow;
+            background-clip: padding-box;
+        }
+        
+        #example3 {
+            border: 10px dotted black;
+            padding: 35px;
+            background: yellow;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The background-clip Property</h1>
+
+    <p>No background-clip (border-box is default):</p>
+    <div id="example1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <p>background-clip: padding-box:</p>
+    <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <p>background-clip: content-box:</p>
+    <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+</body>
+
+</html> -->

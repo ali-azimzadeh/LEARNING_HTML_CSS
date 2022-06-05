@@ -1,0 +1,181 @@
+<!-- ******************************** -->
+<!-- some tips and tricks about <img>   -->
+<!-- ******************************** -->
+
+
+<!-- ******************************************* -->
+<!-- تغییر اندازه ی تصویر با استفاده از استایل -->
+<!-- ******************************************* -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Image Size</h2>
+
+    <p>Here we use the style attribute to specify the width and height of an image:</p>
+
+    <img src="images/img_the_scream.jpg" alt="Girl in a jacket" style="width:200px;height:300px;">
+
+</body>
+
+</html>
+ -->
+
+<!-- ********************************************************** -->
+<!-- تغییر اندازه ی تصویر با استفاده از ویژگی width , heigth -->
+<!-- ********************************************************** -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Image Size</h2>
+
+    <p>Here we specify the width and height of an image with the width and height attributes:</p>
+
+    <img src="images/img_the_scream.jpg" alt="Girl in a jacket" width="200" height="400">
+
+</body>
+
+</html> -->
+
+<!-- ********************************** -->
+<!-- تغییر سایز تصویر با روشهای مختلف -->
+<!-- ********************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* This style sets the width of all images to 100%: */
+        
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Width/Height Attributes or Style?</h2>
+
+    <p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
+
+    <img src="images/w3schools.jpg" alt="HTML5 Icon" width="128" height="128">
+
+    <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>
+
+    <img src="images/w3schools.jpg" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</body>
+
+</html> -->
+
+<!-- ************************************** -->
+<!-- استفاده از فایلهای انیمیشن در صفحه  -->
+<!-- ************************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Animated Images</h2>
+
+    <p>HTML allows moving images:</p>
+
+    <img src="images/programming.gif" alt="Computer man" style="width:148px;height:148px;">
+
+</body>
+
+</html> -->
+
+<!-- ************************* -->
+<!--در  استایل  float دستور   -->
+<!-- ************************* -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Floating Images</h2>
+    <p><strong>Float the image to the right:</strong></p>
+
+    <p>
+        <img src="images/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"> A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+
+    <p><strong>Float the image to the left:</strong></p>
+    <p>
+        <img src="images/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"> A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+
+</body>
+
+</html> -->
+
+<!-- ************************************ -->
+<!--  area و  map  نحوه ی استفاده از تگ -->
+<!-- *********************************** -->
+<!-- این سایت بصورت آنلاین می توانید مختصات تصویر مورد نظر را انتخاب کنید و کد مربوط به آن را بدست آورید -->
+<!-- https://www.image-map.net/ -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+    <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.google.com">
+
+<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+
+<area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+
+</map>
+
+</body>
+
+</html> -->
+
+<!-- **************************************************** -->
+<!--  امکان کنترل یک ناحیه ی قابل کلیک با جاوا اسکریپت-->
+<!-- *************************************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Image Maps</h2>
+
+    <p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+    <img src="images/T_SSEInWebApi.jpg" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="poly" coords="554,42,561,40,567,43,572,48,577,56,586,63,584,75,582,83,578,95,573,102,565,104,560,106,556,114,549,120,542,127,523,129,520,115,523,92,529,75,529,63,533,53,539,44"  href="coffee.htm" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction() {
+            alert("You clicked the coffee cup!");
+        }
+    </script>
+
+</body>
+
+</html> -->

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+<title>sign-up</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" >
+    <link rel="stylesheet" href="C:\Users\user\Desktop\style\sign up.css">
+
+</head>
+
+<body>
+
+
+
+<div class="fo" >
+<form  action="/action_page.php"  method="post" >
+    <fieldset >
+        <legend >ثبت نام</legend><br>
+
+        <div class="row">
+
+        <div class="in">
+
+        <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="la">
+    <lable for="name">&nbsp; : نام &nbsp; </lable><br><br>
+  <br> 
+  </div>
+</div>
+
+
+
+<div class="row">
+    <div class="in">
+    <input type="text"  id="lname" name="lname" required>
+    </div>
+    <div class="la">
+    <label for="lname">   :نام خانوادگی </label><br><br><br>
+</div>
+
+    </div>
+
+
+
+    <div class="row">
+        <div class="in">
+        <input    type="email"   id="email" name="email" placeholder="... @... .com"   style="text-align: left;">
+        </div>
+        <div class="la">
+        <label for="email">:آدرس ایمیل</label><br><br>
+      <br>
+    </div>
+      </div>
+    
+
+    <div class="row">
+        <div class="in">
+    <input type="date" id="birth" name="birth"  max="2021-01-01"  min="1960-01-01">
+    </div>
+    <div class="la">
+    <label for="birth">:تاریخ تولد</label><br><br>
+<br>
+ </div>
+</div>
+
+
+
+
+  <div class="row">
+    <div class="in">
+  <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{7}" placeholder="123-1234567">
+  </div>
+  <div class="la">
+    <label for="tel">:شماره همراه</label><br><br>
+  <br>
+</div>
+
+
+
+  </div>
+
+  <div class="row">
+    <div class="in">
+  <input type="username" id="username" name="username" required>
+  </div>
+  <div class="la">
+  <lable for="username">:نام کاربری</lable><br><br>
+<br> 
+</div>
+
+</div>
+
+
+<div class="row">
+
+    <div class="in">
+<input type="password" id="pass" name="pass"   maxlength="8"  required>
+</div>
+<div class="la">
+    <label for="pass">:رمزعبور</label><br><br>
+ <br>
+</div>
+ </div>
+
+ <div class="row">
+    <input type="submit" value="Submit">
+</div>
+
+
+
+
+
+
+
+ </fieldset>
+ </form>
+</div>
+
+
+
+ </body>
+
+ </html>

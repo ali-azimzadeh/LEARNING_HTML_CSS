@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+        .signup{
+            display: block;
+            width: 150px;
+            background-color: yellow;
+            padding: 6px 14px 6px 14px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:rgb(29, 29, 29);
+        }
+
+        li {
+            float: right;
+        }
+        
+        li a {
+            display: block;
+            color: rgb(200, 255, 0);
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: rgb(126, 126, 126);
+            color: rgb(200, 255, 0);
+        }
+
+        body{
+            background-color: black;
+        }
+
+        div{
+            border: white solid 3px;
+            background-color: rgb(126, 126, 126);
+            padding: 50px;
+        }
+
+        html{
+            font-family: sans-serif;
+        }
+</style>
+</head>
+<body>
+
+    <ul>
+
+        <li><a href="home.html">خانه</a></li>
+        <li><a href="login.html">ورود</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+        <li><a href="about.html">درباره ما</a></li>&nbsp;&nbsp;
+
+
+    </ul>
+
+    <div>
+        <form action="home.html" method="post">
+      
+    
+            <label for="uname"><b>نام کاربری</b></label>
+            <input class="signup" type="text" placeholder="نام کاربری" name="uname" required><br>
+          
+            <label for="psw"><b>گذرواژه</b></label>
+            <input class="signup" type="password" placeholder="گذرواژه" name="psw" required><br>
+
+            <label for="email"><b>ایمیل</b></label>
+            <input class="signup" type="email" name="emaıl" placeholder="ایمیل"required><br>    
+            
+            <label for="date"><b>تاریخ تولد</b></label>
+            <input class="signup" type="date" name="ناریخ تولد" required><br>
+
+            <label for="tel number"><b>شماره تلفن همراه</b></label>
+            <input class="signup" type="tel" placeholder="شماره تلفن همراه" pattern="09(0[1-2]|1[0-9]|3[0-9]|2[0-1])-?[0-9]{3}-?[0-9]{4}" required>
+
+            <input type="submit">
+    </div>
+
+</body>
+</html>

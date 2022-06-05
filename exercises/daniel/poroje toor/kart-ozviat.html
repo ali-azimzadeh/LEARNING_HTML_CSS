@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="daniel Web" content="gardeshgari Web">
+    <title>تور گردشگری در تهران</title>
+    <style>
+        body {
+            background-color: dimgray;
+        }
+
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            direction: rtl;
+
+        }
+
+        th,
+        td {
+            background-color: rgb(86, 120, 233);
+        }
+
+        .h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            color: darkgreen;
+            text-align: center;
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <h1 class="h1"> کارت عضویت</h1>
+    </head>
+
+
+    <table style="width:45%">
+
+        <tr>
+
+            <th rowspan="5">
+                <form action="">
+                    <label for="file"> عکس خود را بارگذاری کنید</label>
+                    <input type="file" id="file" name=" file">
+
+                </form>
+            </th>
+
+            <td>
+                <form action=""><label for="fname">نام &nbsp; :</label>
+                    <input type="text" id="fname" name="firstname" size="14">
+                </form>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <form action=""><label for="lname">نام خانوادگی</label>
+                    <input type="text" id="lname" name="last name" size="14">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form action="">
+                    <label for="national code">کد ملی</label>
+                    <input type="text" id="national code" name="national code" size="10">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form action="">
+                    <label for="data">تاریخ تولد</label>
+                    <input type="date" id="data" name="تاریخ تولد">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form action="">
+                    <label for="phone"> شماره همراه</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="09000000000">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+   <form action="صفحه- ی- اصلی.html">
+    <input type="submit" value="صفحه ی اصلی " style="background-color: greenyellow; 
+    padding: 10px;
+    box-shadow: grey;
+    margin: 5px;
+    text-align: center;">
+   
+   </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!-- ****************************** -->
+<!--  Align Table Headers in HTML   -->
+<!-- ****************************** -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(219, 9, 9);
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>A header that spans two columns</h2>
+
+    <p>Use the colspan attribute to have a header span over multiple columns.</p>
+
+    <table style="width:100%">
+        <tr>
+            <th colspan="2">Full Name</th>
+
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+</body>
+
+</html>

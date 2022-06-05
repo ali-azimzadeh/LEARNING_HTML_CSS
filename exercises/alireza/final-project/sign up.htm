@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <style>
+        h3 {
+            font-size: 25pt;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            text-decoration: underline
+        }
+
+        table {
+            font-family: Calibri;
+            color: white;
+            font-size: 11pt;
+            font-style: normal;
+            font-weight: bold;
+            background-color: rgb(46, 155, 82);
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 128, 68)
+        }
+
+        table.inner {
+            border: 0px
+        }
+
+        body {
+            background-color: rgb(7, 94, 40);
+        }
+    </style>
+    <title> ثبت نام</title>
+
+</head>
+
+<body>
+    <h3>فرم ثبت نام</h3>
+
+
+    <table align="center" cellpadding="10">
+        <tr>
+            <td>نام</td>
+            <td><input type="text" name="نام" required />
+            </td>
+        </tr>
+        <tr>
+            <td>نام خانوادگی</td>
+            <td><input type="text" name="نام خانوادگی" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>تاریخ تولد</td>
+
+            <td>
+                <input type="number" placeholder="روز" min="1" max="31" required>
+                <select id="ماه تولد" name="ماه" required>
+                    <option>ماه:</option>
+                    <option value="1">فروردین</option>
+                    <option value="2">اردیبهشت</option>
+                    <option value="3">خرداد</option>
+                    <option value="4">تیر</option>
+                    <option value="5">مرداد</option>
+                    <option value="6">شهریور</option>
+                    <option value="7">مهر</option>
+                    <option value="8">آبان</option>
+                    <option value="9">آذر</option>
+                    <option value="10">دی</option>
+                    <option value="11">بهمن</option>
+                    <option value="12">اسفند</option>
+                </select>
+                <input type="number" placeholder="سال" min="1300" max="1400" required>
+            </td>
+        </tr>
+        <tr>
+            <td>ایمیل</td>
+            <td><input type="email" name="Email" required/></td>
+        </tr>
+        <tr>
+            <td>شماره موبایل</td>
+            <td>
+                <input type="text" name="mobile" maxlength="11" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>جنسیت</td>
+            <td>
+                مرد <input type="radio" name="jensiat" value="mard" />
+                زن <input type="radio" name="jensiat" value="zan" />
+            </td>
+        </tr>
+        <tr>
+            <td>کشور</td>
+            <td><input type="text" name="keshvar" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>شهر</td>
+            <td><input type="text" name="shahr" required/>
+            </td>
+        <tr>
+            <td>آدرس <br /><br /><br /></td>
+            <td><textarea name="Address" rows="4" cols="30" required></textarea></td>
+        </tr>
+        </tr>
+        <tr>
+            <td>کد پستی</td>
+            <td><input type="text" name="code posti" required/>
+            </td>
+        </tr>
+        <td>کد ملی</td>
+        <td><input type="text" name="code meli" required/>
+        </td>
+        </tr>
+        </tr>
+        <tr>
+            <td>نام کاربری</td>
+            <td><input type="text" name="user" required />
+            </td>
+        </tr>
+        <td>رمز عبور</td>
+        <td><input type="password" name="password" required/>
+        </td>
+        </tr>
+        <td>تکرار رمز عبور</td>
+        <td><input type="password" name="password" required/>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="ثبت نام">
+            </td>
+        </tr>
+    </table>
+
+    </form>
+
+</body>
+
+</html>

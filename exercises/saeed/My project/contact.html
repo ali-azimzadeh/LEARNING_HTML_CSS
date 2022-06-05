@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+        body{
+        background-color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:rgb(29, 29, 29);
+        }
+
+        li {
+            float: right;
+        }
+        
+        li a {
+            display: block;
+            color: rgb(200, 255, 0);
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: rgb(126, 126, 126);
+            color: rgb(200, 255, 0);
+        }
+
+        .div1{
+            border: solid white;
+            padding: 50px;
+            background-color: rgb(126, 126, 126);
+            text-align: center;
+        }
+
+        html{
+            font-family: sans-serif;
+        }
+
+            * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: rgb(194, 194, 194);
+            padding: 20px;
+        }
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+      
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+</style>
+</head>
+<body>
+
+    <ul>
+
+        <li><a href="home.html">خانه</a></li>
+        <li><a href="login.html">ورود</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+        <li><a href="about.html">درباره ما</a></li>&nbsp;&nbsp;
+
+    </ul>
+
+    <div class="div1">
+        <h1>ارتباط با ما</h1>
+    </div>
+
+    <div class="div2">
+            <h2>نظر دهی</h2>
+    <p>انتفادات و پیشنهادات خود را برای ما ارسال کنید</p>
+
+    <div class="container">
+        <form action="home.html" method="post" >
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">نام</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="نام">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">نام خانوادگی</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country"></label>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">موضوع</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="متن خود را وارد کنید" style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

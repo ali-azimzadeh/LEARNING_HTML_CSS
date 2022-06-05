@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: rgb(7, 94, 40);
+    }
+
+    form {
+      border: 3px solid rgb(7, 94, 40);
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(100, 243, 136);
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #04AA6D;
+      color: rgb(255, 255, 255);
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      padding: 16px;
+      text-align: right;
+    }
+
+    input[type='text']::placeholder {
+      text-align: right;
+    }
+
+    input[type='password']::placeholder {
+      text-align: right;
+    }
+
+    h2 {
+      text-align: right;
+    }
+
+   
+  </style>
+  <title>
+    ورود به حساب کاربری
+  </title>
+</head>
+
+<body>
+
+  <h2>ورود </h2>
+
+  <form>
+
+    <div class="container">
+      <label for="uname"><b>نام کاربری</b></label>
+      <input type="text" placeholder="نام کاربری خود را وارد کنید" name="user" required>
+
+      <label for="psw"><b>رمز عبور</b></label>
+      <input type="password" placeholder="رمز عبور خود را وارد کنید" name="pass" required>
+
+      <button type="submit" style="width: 100%;">ورود</button>
+      <label>
+        <input type="checkbox" name="remember"> مرا به خاطر بسپار
+      </label>
+    </div>
+  </form>
+
+</body>
+
+</html>

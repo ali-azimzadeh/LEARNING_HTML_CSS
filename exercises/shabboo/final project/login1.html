@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url(images/background1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .box{
+        width: 300px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.4);
+        text-align: center ;
+        position: absolute;
+    }
+
+    .box h1{
+        color: #fff;
+        text-transform: uppercase;
+        
+        
+    }
+
+    .box input[type=text], .box input[type=password]{
+        display: block;
+        border:0px;
+        background: none;
+        margin: 20% auto;
+        text-align: center;
+        border: 3px solid #91766e;
+        padding: 14px 8px;
+        width: 220px;
+        outline: none;
+        color: wheat;
+        border-radius: 25px;
+        transition: 0.4s;
+    }
+    .box input[type=text]:focus, .box input[type=password]:focus{
+        width: 270px;
+        border-color: #ffc400ee;
+
+    }
+
+    .box input[type=submit]{
+        display: block;
+        border:0px;
+        background: none;
+        margin: 20% auto;
+        text-align: center;
+        border: 3px solid #ffc400ee;
+        padding: 14px 35px;
+        
+        outline: none;
+        color: wheat;
+        border-radius: 25px;
+        transition: 0.4s;
+        cursor: pointer; }
+
+        .box input[type=submit]:hover{
+            background:#1f5728ec ;
+        }
+        form.remember{
+            text-align: right;
+        }
+
+        .cancelbtn{
+            background: #0c3b0a;
+            color: darkgrey;
+            transition: 00.5s;
+        }
+
+        .cancelbtn:hover{
+            background-color: seagreen;
+
+        }
+        div{
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+</style>
+<body>
+    
+   <form class="box" action="login1.html" method="post">
+       <fieldset>
+    <h1>LogIn</h1>
+    <input type="text" name="" id="Username" placeholder="نام کاربری خود را وارد کنید">
+    <input type="password" name="" id="password" placeholder="گذرواژه ">
+    <input type="submit" value="ورود" onclick="validate()">
+    <input type="checkbox" checked="checked" name="remember" class="remember"> مرا به خاطر بسپار
+     </label><br><br>
+     <div>
+         
+        <div class="container" style="background-color:#f1e3e300">
+        
+        <button type="button" class="cancelbtn">لغو</button>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="psw">Forgot <a href="#">password?</a></span></div>
+
+</fieldset>
+   </form> 
+
+   
+</body>
+</html>

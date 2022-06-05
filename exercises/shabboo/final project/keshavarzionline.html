@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDesign1 - Keshavarzi Online</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    </head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+     
+     
+     .header{
+         min-height: 800px;
+         width: 100%;
+         background-image: linear-gradient(rgba(10, 56, 29, 0.7)),(#ffcf5f),
+         url(images/banner.JPG);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-image: url(images/banner.JPG);
+        }
+
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            position:relative;
+          }
+
+
+        nav img{
+            
+            width: 150px;
+            opacity: 1;
+           
+          }
+
+        .nav-links{
+            flex: 1;
+          text-align: right;
+         }  
+
+       .nav-links ul li{
+          list-style: none;
+           display: inline-block;
+           padding: 8px 12px;
+        }
+
+       .nav-links ul li a{
+           text-decoration : none;
+           color:rgb(249, 249, 253);
+           font-size: 18px;
+           
+        }
+
+
+
+       .nav-links ul li::after{
+           content: '';
+           width: 0%;
+           height: 2px;
+           background: #f44336;
+           display: block;
+           margin: auto; 
+           transition: 0.5s;
+          }
+
+
+       .nav-links ul li:hover::after{
+        width: 100%;
+          
+         }
+
+         .text-box{
+             width: 85%;
+             color: rgb(245, 248, 250);
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             text-align: center;}
+
+        .text-box h1{
+                 font-size: 90%;
+                }
+
+        .text-box p{
+                 margin: 10px, 0, 40px;
+                 font-size: 15px;
+             }
+
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(206, 223, 222);
+            border: 1px solid cornsilk;
+            padding: 15px 35px;
+            margin: auto;
+            font-size: 18px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+         }
+        .btn:hover {
+            border: 1px solid #ca392f;
+            background-color: #f44336;
+            transition: 1s;
+          }
+
+         
+          nav.fa
+          {
+             display: none;
+             }
+         
+
+          @media (max-width: 700px) 
+          {
+           .text-box h1{
+            font-size: 20px;
+             }
+
+             .nav-links ul li{
+                display: block;
+                 }
+                 
+            .nav-links{
+                position: absolute;
+                background: #f44336;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: -200px;
+                text-align: right;
+                z-index: 2 ;
+                transition: 1s;
+              }
+
+            nav.fas{
+                display: block;
+                color:rgb(230, 211, 211);
+                margin: 20px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+           
+
+          }
+    .nav-links ul{
+          padding: 20px;
+      } 
+
+/*------------ouractivitirs-------*/
+      .services{
+          width: 100%;
+          margin: 5px;
+          text-align: center;
+          padding-top: 10px;
+      }
+
+      h1{
+          font-size: 30px;
+          font-weight: 600;
+
+      }
+
+      p{
+          color: #123812;
+          font-size: 20px;
+           font-weight: 300;
+           line-height: 22px;
+           padding: 10px;
+      }
+    .row{
+        margin: 5%;
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+      .col{
+          flex-basis: 30%;
+          background: #a3c7a8;
+          border-radius: 10px;
+          margin-bottom: 5%;
+          padding: 20px 12px;
+          box-sizing: border-box;
+          transition: 0.5s;
+      }
+
+     h3.col{
+
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+     }
+
+     .col :hover{
+         box-shadow:0 0 20px 0 ;
+         color: rgba(0, 0, 0, 0.2);
+      }
+      @media(max-width : 700px){
+          .row{
+              flex-direction: column;
+          }
+      }
+<!-------------products-->
+
+.products{
+          width: 80%;
+          margin: auto;
+          text-align: center;
+          padding-top: 50px;
+      }
+        .row{
+        margin: 5%;
+        display: flex;
+        justify-content: space-between;
+
+        }
+
+      .pcol{
+
+       flex-basis: 32%;
+       border-radius: 10px;
+       margin: 20px;
+       position: relative;
+       overflow: hidden;
+        }
+
+    .pcol img{
+        width: 350px;
+        height: 250px;
+        display: block;
+        }
+
+     .layer{
+        background: transparent;
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         transition: 0.5s;
+         top: 0;
+         left: 0;
+         }
+
+         .layer:hover{
+           background: rgba(226, 0, 0, 0.7);
+          }
+
+    .layer h3{
+
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 25px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity:1; 
+        position: absolute;
+        transition: 0.4s;
+         text-align: center;}
+
+    .layer :hover h3{
+         opacity: 1;
+         }
+        
+        
+<!-------------------ourservices------>
+        .ourservices{
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            padding-top: 100%;
+            justify-content: space-between;
+        }
+
+        .ourservices p{
+            color: rgb(4, 15, 4);
+            justify-content: space-between;
+            font-size: 17px;
+        }
+        .ourservices h3{
+            font-size: 20px;
+            
+        }
+
+    .services-col{
+        flex-basis:31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: right;
+         }
+
+        .services-col img{
+             width: 100%;
+             border-radius: 10px;
+
+         }
+         .services-col p{
+             padding: 0%;
+         }
+         .services-col h5{
+
+             margin-top: 15px;
+             margin-bottom: 15px;
+             text-align: right;
+            }
+
+        .contact{
+            margin: 100px auto;
+            width: 80%;
+           background-color: rgba(107, 160, 129, 0.7);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            text-align: center;
+            padding: 100px 0;
+          }
+
+          .contact h3{
+              counter-reset: #fff;
+              margin-bottom: 40%;
+              padding: 0;
+          }
+          @media(max-width:700px){
+            .contact h3{font-size: 25px}
+            p{font-size: 12px;
+            display: block;} 
+            
+
+          }
+
+          .footer{
+              text-align: center;
+              padding: 30px;
+              width: 100%;
+              
+             }
+             .footer p{
+                 background: rgb(54, 99, 63);
+             }
+             .icon fab{
+                 color: #f44336;
+                 cursor: pointer;
+                 margin: 13px;
+                 padding: 20px 0;
+                 }
+    
+    
+    
+         button{
+            background: rgb(181, 188, 201);
+            color: #14442c;
+            transition: 0.5s;
+             width: 150px;
+             border-radius: 20px;
+             position: absolute;
+             top: 30%;
+             left: 10%;
+             text-align:center;
+        }
+        
+        button:hover{
+            background: #a12123;
+            
+        }
+
+        div.row img{
+            width: 350px;
+         height: 250px;
+         display: block;
+          margin: 5px;}
+              
+          
+
+
+</style>
+<body>
+    
+   <section class="header">
+       
+         
+       <nav>
+        <a href="keshavarzionline.html"><img src="images/logo4n.png"></a> 
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+        <div class="enter"> <a href="login1.html"><button class="button">ورد/عضویت</button></a></div>
+
+        
+      
+        <div class="nav-links" id="navLinks">
+         
+            <i class="fa fa-times" onclick="hideMenue()"></i>
+              <ul>
+                <li><a href="contact.html"> <b>ارتباط با ما</b></a></li>
+                <li><a href="register.html"><b>همکاری با ما</b> </a></li>
+                <li><a href=""><b>محصولات</b></a></li>
+                <li><a href=""><b>خدمات</b></a></li>
+                <li><a href="keshavarzionline.html"><b>صفحه اصلی</b></a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="ShowMenue()"></i>
+          
+         
+        </nav>
+
+        
+       
+
+        <div class="text-box">
+            <h1>داروخانه گیاهپزشکی</h1>
+            
+             <a href="visituss.html" class="btn">درباره ما بیشتر بدانید</a>
+        </div>
+    </section>
+
+   <srction class="services">
+       <h1>فعالیت ما</h1>
+       <p>شرکت ما با تمامی گلخانه ها،کارخانه های تولیدی،زمینهای کشاورزی اماده همکاری است و تجربه های خوبی در این زمینه دارد
+       </p>
+
+       <div class="row">
+           <div class="col">
+               <h3>طراحی فضای سبز</h3>
+               <p> فضای سبز در‌واقع سطوحی از زمین های نسکونی و شهری هستند که بر اساس اصول و طراحی های خاص و با استفاده از انواع پوشش های گیاهی پوشیده میشود</p> 
+           </div>
+        <div class="col">
+            <h3>گلخانه ها</h3>
+            <p>گلخانه بخش محدودی از فضاست که در آن عوامل طبیعی قابل کنترل است، به گونه‌ای که برای کشت متراکم وتولید محصول خارج از فصل یا خارج از محیط طبیعی، محل مناسبی را ایجاد می‌کند.</p> 
+           </div>
+        <div class="col">
+            <h3>خدمات باغبانی</h3>
+            <p>خدمات باغبانی ما شامل سمپاشی،هرس،پیوند،گل‌کاری،چمن‌کاری میباشد که با تعیین وقت قبلی میتوانید ازین خدمات استفاده نمایید </p>
+           </div>
+           
+       </div>
+    </section>
+
+   
+
+    <section class="products">
+        <h1>محصولات ما</h1>
+        <p>شما میتوانید به راحتی از محصولات مد نظر خود شامل کود،سم،بذر،اقلام بیولوژیک،ابزارآلات و گیاهان آپارتمانی را به صورت انلاین تهیه خریداری نمایید</p>
+         
+
+        <div class="row">
+
+            <div class="pcol">
+
+                <img src="images/fertilizer.jpg" alt="fertilizer">
+                <div class="layer"><h3>کود و سم</h3></div>
+
+            
+           </div>
+            <div class="pcol">
+
+                <img src="images/fertilizerbio.PNG" alt="biological products">
+                <div class="layer"><h3> اقلام بیولوژیک </h3></div>
+
+            </div>
+            
+            <div class="pcol">
+
+                <img src="images/seeds1.PNG" alt="seed">
+                <div class="layer"><h3>بذر</h3></div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="ourservices">
+        <h1>خدمات ما</h1>
+        <p> خدمات ما شامل خدمات فنی و مشاوره ای کشاورزی در انتخاب صحیح  محصولات، خدمات باغبانی،طراحی فضای سبز و نظارت بر زمین های کشاورزی و ازمایشگاه خاکشناسی میباشد.</p>
+        
+        <div class="row">
+            <div class="services-col">
+                <img src="images/banner2.jpg" alt="observation">
+                <h5>نظارت بر زمین های کشاورزی</h5>
+                <p>شما میتوانید با تعیین وقت قبلی در جهت افزایش میزان بهرهوری زمین کشاورزی خود اقدام کنید</p>
+            </div>
+            <div class="services-col">
+                <img src="images/paysagist.jpg" alt="paysagist">
+                <h5>طراحی فضای سبز </h5>
+                <p>طراحی فضای سبز به منزله تخصصی حرفه‌ای است که مواردی هم چون تحلیل، برنامه ریزی، طراحی‌، مدیریت و نظارت بر محیط‌های طبیعی و انسان ساخت را در بر می‌گیرد.</p>
+            </div>
+            <div class="services-col">
+                <img src="images/index.jpg" alt="labratoire">
+                <h5>ازمایشگاه خاک شناسی</h5>
+                <p>شرکت ما مجهز به ازمایشگاه خاک شناسی میباشد که شما میتوانید نمونه خود را جهت ازمایش به کارشناسان ما نشان دهید و در اسرع وقت به ان رسیدگی میکنند</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="contact">
+        <h5>جهت مشاوره و یا تعیین وقت نظارت با ما تماس بگیرید</h5>
+
+    <a href="contact.html" class="btn" target="_parent">ارتباط با ما</a>
+
+
+    </section>
+
+    <footer class="footer">
+        <p> کلینیک گیاهپزشکی ما ارایه کننده خدمات فنی و مشاوره ای کشاورزی با بیش از 15 سال سابقه  در خدمت شما میباشد</p>
+   
+       <div class="icon">
+          <i class="fab fa-whatsapp"></i> &nbsp;
+           <i class="fab fa-twitter"></i>&nbsp;
+           <i class="fab fa-linkedin-in"></i>&nbsp;
+           <i class="fab fa-instagram"></i>&nbsp;
+           <i class="fas fa-phone"></i>&nbsp;
+       </div>
+    </footer>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function ShowMenue (){
+
+        navLinks.style.right = "0";
+    }
+    function hideMenue(){
+        navLinks.style.right = "-200px";
+      }
+
+</script>
+
+</body>
+</html>

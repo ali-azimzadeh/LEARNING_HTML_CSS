@@ -1,0 +1,225 @@
+<!-- ******************** -->
+<!--  pseudo-class in CSS -->
+<!-- ******************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            background-color: green;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        div:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Mouse over the div element below to change its background color:</p>
+
+    <div>Mouse Over Me</div>
+
+</body>
+
+</html> -->
+
+<!-- ****************************** -->
+<!-- tooltip by pseudo-class in CSS -->
+<!-- ****************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+        
+        div:hover p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>Hover over this div element to show the p element
+        <p>Tada! Here I am!</p>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- ******************** -->
+<!--  first-child in CSS -->
+<!-- ******************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* را انتخاب کن که اولین عنصر فرزند برای والد باشند p یعنی تگهای */
+        
+        p:first-child {
+            color: blue;
+        }
+        /* یعنی  تگی را انتخاب کن که اولین عنصر یا فرزند برای والد باشد  */
+        /* :first-child {
+            color: blue;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <p>This is some text1.</p>
+    <p>This is some text2.</p>
+
+    <div>
+        <p>This is some text3.</p>
+        <p>This is some text4.</p>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- ******************** -->
+<!--  :: selector in CSS -->
+<!-- ******************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* را اضافه کن content محتوای موجود در  p یعنی بعد از هر تگ  */
+        
+        p::after {
+            content: " - Remember this";
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>My name is Donald</p>
+    <p>I live in Ducksburg</p>
+
+</body>
+
+</html> -->
+
+<!-- ******************** -->
+<!--  not selector in CSS -->
+<!-- ******************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            color: #000000;
+        }
+        /* را انتخاب کن p یعنی همه ی تگهای به جز تگ  */
+        
+         :not(p) {
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is a heading</h1>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <div>This is some text in a div element.</div>
+
+    <a href="https://www.w3schools.com" target="_blank">Link to W3Schools!</a>
+
+</body>
+
+</html> -->
+
+<!-- ********************** -->
+<!--  Pseudo-element in CSS -->
+<!-- ********************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* را انتخاب کن p یعنی اولین حرف در تگهای  */
+        
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+    <p>Hello how are you?</p>
+
+</body>
+
+</html> -->
+
+<!-- ***************** -->
+<!--  ::marker  in CSS -->
+<!-- ***************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* یعنی مارکرها را در لیست های مرتب یا نامرتب پیدا کن */
+        
+         ::marker {
+            color: red;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+</body>
+
+</html> -->

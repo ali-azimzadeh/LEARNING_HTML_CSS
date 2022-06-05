@@ -1,0 +1,88 @@
+<!-- *********************** -->
+<!-- z-index property in CSS -->
+<!-- *********************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is a heading</h1>
+    <img src="images/pic_trulli.jpg" width="100" height="140">
+    <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+</body>
+
+</html> -->
+
+<!-- *********************** -->
+<!-- z-index property in CSS -->
+<!-- *********************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            position: relative;
+        }
+        
+        .black-box {
+            position: relative;
+            z-index: 1;
+            border: 2px solid rgb(240, 229, 229);
+            height: 100px;
+            margin: 30px;
+        }
+        
+        .gray-box {
+            position: absolute;
+            z-index: 3;
+            /* gray box will be above both green and black box */
+            background: rgb(226, 39, 39);
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        
+        .green-box {
+            position: absolute;
+            z-index: 2;
+            /* green box will be above black box */
+            background: rgb(51, 219, 51);
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Z-index Example</h1>
+
+    <p>An element with greater stack order is always above an element with a lower stack order.</p>
+
+    <div class="container">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+    </div>
+
+</body>
+
+</html> -->

@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid goldenrod;
+    width: 100%;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}

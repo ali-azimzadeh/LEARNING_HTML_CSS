@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="html,css,javascript">
+  <meta name="wiewport" content="width=davice-width,initial-scale=1.0">
+  <meta name="discription" content="کمیته گردشگری">
+  <meta name="author" content="hamed abbasi">
+  <a href="https://www.vecteezy.com/free-vector/holiday"></a>
+  <style>
+    body {
+      direction: rtl;
+      background-color: rgba(191, 237, 255);
+      font-size: 17px;
+    }
+
+    .a {
+      text-align: center;
+      font-size: 30px;
+      font-style: italic;
+      text-shadow: 2px 2px 3px rgb(9, 4, 250);color: rgb(0, 0, 0);
+    }
+
+    form {
+      background-color: rgb(191, 237, 255);
+    }
+
+    label {
+      font-size: 15px;
+      font-style: normal;
+      font-family: sans-serif;
+    }
+
+    .cla {
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+      font-size: 20px;
+    }
+
+    .select {
+      width: 100px;
+      padding: 10px 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255);
+    }
+
+    .select:hover {
+      background-color: rgb(151, 255, 255);
+    }
+
+    input[type="text"]:focus,
+    input[type="date"]:focus,
+    input[type="tel"]:focus {
+      width: 200px;
+    }
+
+    fieldset {
+      box-shadow: 10px 10px 50px 10px rgb(119, 0, 255);
+    }
+
+    @media only screen and (max-width: 900px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<html>
+
+<body style="overflow: auto;">
+
+  <div class="responsive">
+    <form style="text-align: right;" actin="" method="POST" target="_blank" autocomplete="on">
+
+      <fieldset>
+
+        <legend class="a">فرم تکمیل پروفایل</legend>
+        <img src="image/download.png" alt="form " width="80px" height="80px">
+        <br />
+        <br />
+        <br />
+
+        <label for="first name">نام*</label>
+        <input type="text" id="first name" name="first name" required>
+
+        <br />
+        <br />
+
+        <label class="b" for="last name">نام خانوادگی*</label>
+        <input type="text" id="last name" name="last name" required>
+
+        <br />
+        <br />
+
+        <label for="kode meli">کد ملی*</label>
+        <input type="text" id="kode meli" name="kode meli" required>
+
+        <br />
+        <br />
+
+        <label for="birthday">تاریخ تولد*</label>
+        <input type="date" id="birthday" name="birthday" required>
+
+        <br />
+        <br />
+
+        <label for="home address" style="text-align: center;">ادرس منزل*</label>
+        <textarea name="massage" rows="3" cols="15" required></textarea>
+
+        <br />
+        <br />
+
+        <label for="your image">تصویر خودتان*</label>
+        <input type="file" id="your image" name="انتخاب تصویر" value="انتخاب تصویر" required>
+
+        <br />
+        <br />
+
+        <label for="you phone number">شماره موبایل*</label>
+        <input type="tel" id="you phone number" name="you phone number"
+          pattern="09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}" required>
+
+        <br />
+        <br />
+
+        <label for="education level">میزان تحصیلات*</label>
+
+        <select class="select">
+          <option value="si">سیکل</option>
+          <option value="di">دیپلم</option>
+          <option value="fd">فوق دیپلم</option>
+          <option value="li">لیسانس</option>
+          <option value="fl">فوق لیسانس</option>
+          <option value="ka">کارشناسی ارشد</option>
+          <option value="d">دکترا</option>
+        </select>
+
+        <br />
+        <br />
+        <a href="خانه.html">
+          <input class=cla type="submit" value="ثبت" form="form1"></a>
+
+        <br />
+        <br />
+        <br />
+
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

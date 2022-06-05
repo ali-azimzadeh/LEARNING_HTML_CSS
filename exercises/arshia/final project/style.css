@@ -1,0 +1,50 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  
+  body {
+    background: rgb(197, 74, 74);
+  }
+  
+  .container {
+    margin: 80px auto;
+    width: 400px;
+    height: 20px
+    
+  }
+  .picture{
+    margin-top: 0px;
+    margin-left: 45%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+  .search-field {
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+  }
+  
+  .search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+  }
+  
+  .search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+  .h2 {text-align: center;}

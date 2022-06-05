@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:rgb(197, 74, 74)
+            }
+            ul{
+                background-color:rgb(64, 211, 199);
+                list-style-type: none;
+                margin: 30px;
+                overflow: hidden;
+                
+                
+            }
+            li a{
+                 display: block;
+                 color:rgb(0, 0, 0);
+                 text-align: center;
+                 padding: 0px;
+                 text-decoration: none;
+                 
+                 
+            
+            }
+            li{
+                float: right;
+            }
+    
+       
+    
+            li a,
+        .dropbtn {
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            z-index: 3;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(204, 108, 108) ;
+        }
+        
+        li.dropdown {
+            display: block;
+            
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:rgba(24, 205, 211, 0.74);
+            z-index: +3;
+           
+        }
+        
+        .dropdown-content a {
+            color:rgb(0, 0, 0) ;
+            padding: 25px;
+            width: 17px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+      
+        .dropdown-content a:hover {
+            background-color:rgba(24, 224, 207, 0.788);
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            
+        }
+
+        .header{
+            
+           text-align: center;
+           color: rgb(0, 0, 0); 
+           height: 0px;
+           z-index: 3;
+            
+        }
+        #borderimg{
+            border: 30px solid transparent;
+            
+          border-image: url(IMG_8264.JPEG) 70 round;
+          
+          height: 50px;
+        }
+
+        @media screen and (max-width:1150px) {
+            .topnav{
+                width: 32px;
+                padding: 28px;
+                float: right;
+                overflow: hidden;
+                display: block;
+                margin: 0%;
+               
+
+                
+            }
+            @media  screen and (max-width:1150px) {
+                #borderimg{
+                  padding: 10px; 
+                 width: 69%;
+                    margin: 70px;
+                    margin-left: 0%;
+                }
+            }
+     
+            .header{
+                text-align: left;
+                float: left;
+            }
+            .topnav a{
+                
+               display: block;
+               margin: 0px;
+               
+               
+            }
+            .dropdown-content{
+                display: none;
+                padding: 0px;
+                position: sticky;  
+            }
+            
+        }
+        .login{
+            border-style: solid ;
+            text-align: center;
+            border-color: rgb(0, 0, 0);
+            background-color: rgba(24, 205, 211, 0.74);
+            display: block;
+            height: 20px;
+            color: black;
+
+        }
+        .button {
+      border: none;
+      color: white;
+      padding: 16px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+       margin: 4px 2px;
+       transition-duration: 0.4s;
+       cursor: pointer;
+}
+
+.button1 {
+  background-color: rgba(38, 235, 218, 0.781); 
+  color: black; 
+  border: 2px solid rgb(219, 47, 47);
+}
+
+.button1:hover {
+  background-color: rgb(204, 108, 108);
+  color: white;
+}
+
+.button2 {
+  background-color: rgba(38, 235, 218, 0.781); 
+  color: black; 
+  border: 2px solid rgb(207, 41, 41);
+}
+
+.button2:hover {
+  background-color: rgb(204, 108, 108);
+  color: white;
+
+}
+.button3 {
+  background-color: rgba(38, 235, 218, 0.781); 
+  color: black;
+  border: 2px solid rgb(194, 40, 40);
+}
+.button3:hover {
+  background-color: rgb(204, 108, 108);
+  color: white;
+}
+
+            
+            
+
+
+
+        </style>
+    </head>
+
+<body>
+    <div class="header">
+        <h1 id="borderimg">کمیته گردشگری استان تهران</h1>
+    </div>
+    <ul class="topnav">
+        
+        <li><a href="#">عضویت در سایت</a></li>
+        <li><a href="#">تورهای گردشگری</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">اعضاء</a>
+            <div class="dropdown-content">
+                    <a href="info.htm">تکمیل پروفایل</a></br>
+                    <a href="#">صدور کارت عضویت</a>
+           </div>
+            </li>            
+        <li><a href="#">خدمات</a></li>
+        <li style="float: left;"><a href="#">درباره ما</a></li>
+        <li style="float: left;"><a href="#">تماس با ما</a></li>
+       
+    </ul>
+
+    <a href="info.htm"class="button button1">SIGN UP</a>
+    <a href="login.htm" class="button button2">LOGIN</a>
+    <a href="index.htm" class="button button3">SEARCH</a>
+
+
+</body>
+
+</html>

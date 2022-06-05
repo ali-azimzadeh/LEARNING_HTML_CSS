@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .exper{
+        background-color: rgb(17, 46, 10);
+     }
+
+    *{
+        text-align: right;}
+
+        body{
+            background-color: rgb(225, 238, 225);
+        }
+
+     .form{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+         width:90%;
+         margin-top: 6px;
+         text-align: right;
+         background-color: rgb(17, 46, 10);
+         color: rgb(179, 199, 173);
+         }
+          
+   fieldset{
+    box-shadow: rgb(102, 25, 25);
+    column-width: auto;
+     }
+     @media screen and (min-width:600px) {
+
+     .form .exper{
+        width:100%;
+        margin-top: 0px;}
+     }
+
+     input[type=submit]:hover {
+  background-color: #612737;
+   }
+   input[type=reset]:hover {
+  background-color: #612737;
+   }
+   input[type=button]:hover {
+  background-color: #612737;
+   }
+
+   h4{
+       color: rgb(188, 207, 191);
+   }
+
+button:hover{
+    background: sienna
+}
+h3{
+    color:rgb(6, 32, 22);
+}
+    
+
+    
+    
+
+
+
+</style>
+<body>
+    <h3>جهت همکاری با ما اطلاعات خواسته شده را لطفا با دقت پر کنید.</h3><br><br>
+    <form class="form" autocomplete="on">
+        <fieldset>اطلاعات شخصی
+        <h4>مشخصات خود را اینجا وارد کنید</h4>
+        <br><br>
+        <label for="fname">نام</label><br> <br>
+        <input type="text"> <br><br><br>
+        <label for="lname">نام خانوادگی</label><br><br>
+        <input type="text"><br><br><br>
+        <label for="sex">جنسیت</label><br><br>
+        
+       
+        <label for="sex">خانم</label>
+        <input type="radio" id="sex" name="sex" value="زن"><br>
+        <label for="sex">آقا</label>
+        <input type="radio" id="sex" name="sex" value="مرد"><br><br><br>
+        
+        <label for="datebirth">تاریخ تولد</label><br>
+        <input type="date">
+
+         </fieldset><br>
+         <fieldset>اطلاعات تماس
+         <h5>لطفا اطلاعات تماس خود را وارد کنید</h5>
+         <label for="email">پست الکترونیکی</label><br> <br>
+        <input type="email" placeholder="someone@gmail.com" required> <br><br><br>
+        <label for="call">تلفن</label><br><br>
+        <input type="tel" pattern="[789][0-9]{9}">
+        </fieldset><br>
+
+        <fieldset>مهارت ها 
+            <h5>لطفا مهارت های خود را مشخص کنید</h5>
+            <h6>مهارت های کامپیوتری</h6>
+           
+            <label for="excel">excel</label>
+            <input type="checkbox" name="exvel" id="software"><br>
+            <input type="range"min="0" max="5"><br><br>
+            <label for="windoes10">windows10</label>
+            <input type="checkbox" name="windows10" id="software"><br>
+            <input type="range"min="0" max="5"><br><br>
+            <label for="PowerPoint">PowerPoint</label>
+            <input type="checkbox" name="PowerPoint" id="software"><br>
+            <input type="range" min="0" max="5"><br><br><br>
+            <h5>در چه زمینه هایی مایل به همکاری هستید؟ </h5>
+            <select multiple class="exper">
+                <option value="labratoir">آزمایشگاه خاک شناسی</option>
+                <option value="observation">نظارت </option>
+                <option value="fertilizer">تشخیص بیماری</option>
+                <option value="designer">طراحی فضای سبز</option>
+                <option value="diagnose ">تشخیص</option>
+            </select>
+        </fieldset><br>
+        <fieldset>گواهی و مدارک
+            <h5>مدارک خود را بارگذاری کنید</h5>
+
+            <label for="certificates">کارت شناسایی</label><br>
+            <input type="file"><br><br>
+            <label for="diplome">اخرین مدرک تحصیلی</label><br>
+            <input type="file"><br><br><br>
+            <label for="cv">CV</label><br>
+            <input type="file"><br><br><br>
+            <h5>چند سال سابقه کار دارید؟</h5>
+            <input type="submit" value="submit">
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            
+        </fieldset><br>
+        <fieldset>مصاحبه
+            <h5>مکان و زمان مصاحبه خود را تعیین کنید</h5>
+            <label for="date-time">ساعت و تاریخ:</label><br>
+            <input type="datetime-local" name="time and date" id="time and date"><br><br><br>
+            <label for="location">مکان</label><br>
+            <select name="location" id="location">مکان</select> <br>
+                <option value="tehran">تهران</option>
+                <option value="kermanshah">کرمانشاه</option>
+                <option value="rasht">رشت</option><br><br>
+              
+         </fieldset>
+
+         <br><br>
+         <fieldset>انگیزه نامه
+            
+            
+           <h5>انگیزه خود را در جند سطر برای ما بنویسید</h5> 
+           <textarea name="motivation" id="" cols="30" rows="10"></textarea><br><br>
+        
+         </fieldset><br><br>
+
+         <input type="reset">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <button onclick="alert('اطلاعات شما با موفقیت ثبت شده')">submit</button>
+         
+
+
+
+
+
+    
+
+
+
+    </form>
+</body>
+</html>

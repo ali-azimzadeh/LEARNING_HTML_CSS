@@ -1,0 +1,253 @@
+<!-- *************************** -->
+<!-- [attribute] selector in CSS -->
+<!-- *************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+
+<head>
+    <style>
+        /* هستند target را انتخاب کن که دارای  اتریبیوت a یعنی تمام تگهای  */
+        
+        a[target] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS [attribute] Selector</h2>
+    <p>The links with a target attribute gets a yellow background:</p>
+
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+</body>
+
+</html> -->
+
+<!-- *********************************** -->
+<!-- [attribute="value"] selector in CSS -->
+<!-- *********************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* باشد _blank با مقدار  target  را انتخاب کن که دارای اتریبیوت  a یعنی تگهای  */
+        
+        a[target=_blank] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS [attribute="value"] Selector</h2>
+    <p>The link with target="_blank" gets a yellow background:</p>
+
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+</body>
+
+</html> -->
+
+<!-- ************************************ -->
+<!-- [attribute~="value"] selector in CSS -->
+<!-- ************************************ -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*   باشد flower باشد و دارای  مقدار   title  یعنی تگهایی را انتخاب کن که دارای ویژگی   */
+        
+        [title~=flower] {
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS [attribute~="value"] Selector</h2>
+    <p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+
+    <img src="images/klematis.jpg" title="klematis flower" width="150" height="113">
+    <img src="images/img_flwr.gif" title="flower" width="224" height="162">
+    <img src="images/img_tree.gif" title="tree" width="200" height="358">
+    <img src="images/img_tree.gif" title="flower tree" width="200" height="358">
+    <img src="images/img_tree.gif" title="klematis flower tree" width="200" height="358">
+
+</body>
+
+</html> -->
+
+<!-- ************************************ -->
+<!-- [attribute|="value"] selector in CSS -->
+<!-- ************************************ -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        [class|=top] {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS [attribute|="value"] Selector</h2>
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <p class="text-top">How are you</p>
+    <p class="text-top-text">How are you</p>
+
+</body>
+
+</html> -->
+
+<!-- ************************************ -->
+<!-- [attribute^="value"] selector in CSS -->
+<!-- ************************************ -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* شروع شود top باشد و مقدار آن با کلمه ی  class یعنی تگهایی را انتخاب کن که دارای ویژگی   */
+        
+        [class^="top"] {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS [attribute^="value"] Selector</h2>
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <p class="text-top">Hello world!</p>
+
+</body>
+
+</html> -->
+
+<!-- ************************************ -->
+<!-- [attribute$="value"] selector in CSS -->
+<!-- ************************************ -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* ختم می شود test است و مقدار آن به  class  یعنی تمام تگهایی را انتخاب کن که دارای ویژگی  */
+        
+        [class$="test"] {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS [attribute$="value"] Selector</h2>
+
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+    <div class="test second">The second div element.</div>
+
+</body>
+
+</html> -->
+
+
+<!-- ************************************ -->
+<!-- [attribute*="value"] selector in CSS -->
+<!-- ************************************ -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* را دارد te است و کلمه ی  class یعنی تمام تگهایی را انتخاب کن که دارای ویژگی  */
+        
+        [class*="te"] {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS [attribute*="value"] Selector</h2>
+
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+    <div class="test second">The second div element.</div>
+
+
+</body>
+
+</html> -->
+
+<!-- **************************** -->
+<!-- styling form selector in CSS -->
+<!-- **************************** -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        input[type=text] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+        }
+        
+        input[type=button] {
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Styling Forms</h2>
+
+    <form name="input" action="" method="get">
+        Firstname:<input type="text" name="Name" value="Peter" size="20"> Lastname:
+        <input type="text" name="Name" value="Griffin" size="20">
+        <input type="button" value="Example Button">
+    </form>
+
+</body>
+
+</html> -->

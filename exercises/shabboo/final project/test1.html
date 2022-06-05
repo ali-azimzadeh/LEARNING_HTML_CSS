@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .products{
+          width: 80%;
+          margin: auto;
+          text-align: center;
+          padding-top: 50px;
+      }
+        .row{
+        margin: 5%;
+        display: flex;
+        justify-content: space-between;
+
+        }
+
+      .pcol{
+
+       flex-basis: 32%;
+       border-radius: 10px;
+       margin: 20px;
+       position: relative;
+       overflow: hidden;
+        }
+
+    .pcol img{
+        width: 350px;
+        height: 250px;
+        display: block;
+        }
+
+     .layer{
+        background: transparent;
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         transition: 0.5s;
+         top: 0;
+         left: 0;
+         }
+
+         .layer:hover{
+           background: rgba(226, 0, 0, 0.7);
+          }
+
+    .layer h3{
+
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 25px;
+        bottom: 10px;
+        left: 50px;
+        transform: translateX(-50%);
+        opacity: 0; 
+        position: absolute;
+        transition: 0.4s;}
+
+    .layer :hover h3{
+        bottom: 50% ;
+         opacity: 1;
+           }
+        
+      
+       
+</style>
+<body>
+    <section class="products">
+        <h1>محصولات ما</h1>
+        <p>شما میتوانید به راحتی از محصولات مد نظر خود شامل کود،سم،بذر،اقلام بیولوژیک،ابزارآلات و گیاهان آپارتمانی را به صورت انلاین تهیه خریداری نمایید</p>
+         
+
+        <div class="row">
+
+            <div class="pcol">
+
+                <img src="images/fertilizer.jpg" alt="fertilizer">
+                <div class="layer"><h3>کود و سم</h3></div>
+
+            
+           </div>
+            <div class="pcol">
+
+                <img src="images/fertilizerbio.PNG" alt="biological products">
+                <div class="layer"><h3> اقلام بیولوژیک </h3></div>
+
+            </div>
+            
+            <div class="pcol">
+
+                <img src="images/seeds1.PNG" alt="seed">
+                <div class="layer"><h3>بذر</h3></div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        p {text-align: left;}
+
+        h2 {text-align: right;
+        color: rgb(7, 3, 37);text-emphasis-style: initial;}
+
+        label{color:rgb(4, 11, 46);}
+
+        h3 {text-align: left;
+            font-size: large;
+        color:rgb(24, 6, 53);}
+
+        h4{color: rgb(21, 4, 31);}
+
+        h5{color: rgb(23, 6, 31);}
+
+        body {background-color:rgb(236, 131, 83)}
+         form{border: 10px solid rgba(194, 76, 22, 0.808); background-color: white;}
+        
+    </style>
+
+
+</head>
+<body>
+    <h2>فرم(تمرین جلسه دهم) </h2>
+    <p style="color: black; "><b>Fill out the form below</b> </p>
+
+    <form autocomplete="on">
+        
+        <fieldset> 
+            
+            <h3>personal information:</h5>
+            <br>
+            <br>
+            
+        <label for="fist name" ><b>name</b> </label> 
+        <br>
+        <input type="text">
+        <br>
+        <br>
+    
+        <label for="last name";> <b>Lastname</b></label>
+        <br>
+        <input type="text">
+        <br>
+        <br>
+        <label for="emaile"><b>enter your electronic post</b></label> <br>
+        <input type="email" placeholder="someone@gmail.com" required>
+         <br>
+         <br>
+         <label for="telephone"><b>enter your phone number</b></label> <br>
+         <input type="tel" pattern="[789][0-9]{9}">
+         <br>
+         <br>
+         <br>
+
+         <h4>Gender </h5>
+
+         <input type="radio" id="sexuality" name="sex" value="Woman">
+         <label for="sexuality"> Woman</label>
+         <br>
+
+
+    
+         <input type="radio" id="sexuality" name="sex" value="Man">
+         <label for="sexuality">Man</label>
+         <br>
+         <br>
+
+         <h4>DateBirth:</h5>
+         <label for="datebirth"><b>choose</b></label> <br>
+         <input type="date">
+         <br>
+         <br>
+        </fieldset> 
+        <br>
+
+        <fieldset>
+        <h3>skills:</h3>
+
+         <h5>choose your skills:</h5>
+
+         <input type="checkbox" id="softwarre" name="CSS"
+         checked>
+        <label for="softwarre">CSS</label><br>
+        <INput type="range"></INput> <br>
+        
+        
+        <br>
+        <input type="checkbox" id="softwarre" name="Python"
+         checked>
+        <label for="softwarre">Python</label><br>
+        <input type="range"><br>
+        
+        <br>
+        
+        <input type="checkbox" id="softwarre" name="HTML"
+         checked>
+        <label for="softwarre">HTML</label><br>
+        <input type="range"><br><br>
+        <input type="checkbox" id="softwarre" name="JavaScripy"
+         checked>
+        <label for="softwarre">JavaScript</label><br>
+        <input type="range"><br>
+        
+
+        <br>
+        <br>
+        <br>
+
+        <h4>In what part can you work?</h4> <br>
+
+        <select multiple>
+            <option value="front-end">front-end</option>
+            <option value="back-end">back-end</option>
+            <option value="network">network</option>
+            <option value="seo">seo</option>
+        </select><br><br>
+       
+    </fieldset><br>
+    <fieldset>
+        <h3> uploud your files: </h3>
+
+            <label for="passport"><b>passport</b> :</label><br><br>
+            <input type="file"><br><br>
+
+            <label for="Diplome"><b>Diplome</b>:</label><br><br>
+            <input type="file"><br><br>
+
+            <label for="certificates"><b>certificates</b>:</label><br>
+            <input type="file"><br><br>
+
+            <label for="cv"><b>cv:</b></label><br>
+            <input type="file"><br><br>
+            
+
+    </fieldset><br>
+
+
+    <fieldset>
+        
+        <h3>Choose the place and time of your interview:</h3>
+
+    <label for="time and date"><b>time and date</b></label>
+    <input type="datetime-local" name="time and date" id="time and date">
+    <br>
+    <br>
+    <h3>Select the location you want</h3>
+
+    <label for="location"><b>location:</b></label>
+    <select name="location" id="location">
+        <option value="paris">Paris</option>
+        <option value="rouen">Rouen</option>
+        <option value="Nice">Nice</option>
+    </select><br><br><br><br>
+    </fieldset>
+    <br>
+    <br>
+    <br>
+
+        <h3>Write your motivation in a few lines:</h3>
+        <textarea name="" id="" cols="35" rows="10"></textarea>
+        <br>
+        <br>
+    
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
